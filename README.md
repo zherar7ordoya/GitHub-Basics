@@ -1,317 +1,245 @@
-### Features
+---
+__Advertisement :)__
 
-- Support Standard Markdown / CommonMark and GFM(GitHub Flavored Markdown);
-- Full-featured: Real-time Preview, Image (cross-domain) upload, Preformatted text/Code blocks/Tables insert, Code fold, Search replace, Read only, Themes, Multi-languages, L18n, HTML entities, Code syntax highlighting...;
-- Markdown Extras : Support ToC (Table of Contents), Emoji, Task lists, @Links...;
-- Compatible with all major browsers (IE8+), compatible Zepto.js and iPad;
-- Support identification, interpretation, fliter of the HTML tags;
-- Support TeX (LaTeX expressions, Based on KaTeX), Flowchart and Sequence Diagram of Markdown extended syntax;
-- Support AMD/CMD (Require.js & Sea.js) Module Loader, and Custom/define editor plugins;
+- __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
+  resize in browser.
+- __[babelfish](https://github.com/nodeca/babelfish/)__ - developer friendly
+  i18n with plurals support and easy syntax.
 
-# Editor.md
+You will like those projects!
 
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+---
 
-![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
+# h1 Heading 8-)
+## h2 Heading
+### h3 Heading
+#### h4 Heading
+##### h5 Heading
+###### h6 Heading
 
 
-**Table of Contents**
+## Horizontal Rules
 
-[TOCM]
+___
 
-[TOC]
+---
 
-#H1 header
-##H2 header
-###H3 header
-####H4 header
-#####H5 header
-######H6 header
-#Heading 1 link [Heading link](https://github.com/pandao/editor.md "Heading link")
-##Heading 2 link [Heading link](https://github.com/pandao/editor.md "Heading link")
-###Heading 3 link [Heading link](https://github.com/pandao/editor.md "Heading link")
-####Heading 4 link [Heading link](https://github.com/pandao/editor.md "Heading link") Heading link [Heading link](https://github.com/pandao/editor.md "Heading link")
-#####Heading 5 link [Heading link](https://github.com/pandao/editor.md "Heading link")
-######Heading 6 link [Heading link](https://github.com/pandao/editor.md "Heading link")
+***
 
-##Headers (Underline)
 
-H1 Header (Underline)
-=============
+## Typographic replacements
 
-H2 Header (Underline)
--------------
+Enable typographer option to see result.
 
-###Characters
-                
-----
+(c) (C) (r) (R) (tm) (TM) (p) (P) +-
 
-~~Strikethrough~~ <s>Strikethrough (when enable html tag decode.)</s>
-*Italic*      _Italic_
-**Emphasis**  __Emphasis__
-***Emphasis Italic*** ___Emphasis Italic___
+test.. test... test..... test?..... test!....
 
-Superscript: X<sub>2</sub>，Subscript: O<sup>2</sup>
+!!!!!! ???? ,,  -- ---
 
-**Abbreviation(link HTML abbr tag)**
+"Smartypants, double quotes" and 'single quotes'
 
-The <abbr title="Hyper Text Markup Language">HTML</abbr> specification is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.
 
-###Blockquotes
+## Emphasis
 
-> Blockquotes
+**This is bold text**
 
-Paragraphs and Line Breaks
-                    
-> "Blockquotes Blockquotes", [Link](http://localhost/)。
+__This is bold text__
 
-###Links
+*This is italic text*
 
-[Links](http://localhost/)
+_This is italic text_
 
-[Links with title](http://localhost/ "link title")
+~~Strikethrough~~
 
-`<link>` : <https://github.com>
 
-[Reference link][id/name] 
+## Blockquotes
 
-[id/name]: http://link-url/
 
-GFM a-tail link @pandao
+> Blockquotes can also be nested...
+>> ...by using additional greater-than signs right next to each other...
+> > > ...or with spaces between arrows.
 
-###Code Blocks (multi-language) & highlighting
 
-####Inline code
+## Lists
 
-`$ npm install marked`
+Unordered
 
-####Code Blocks (Indented style)
++ Create a list by starting a line with `+`, `-`, or `*`
++ Sub-lists are made by indenting 2 spaces:
+  - Marker character change forces new list start:
+    * Ac tristique libero volutpat at
+    + Facilisis in pretium nisl aliquet
+    - Nulla volutpat aliquam velit
++ Very easy!
 
-Indented 4 spaces, like `<pre>` (Preformatted Text).
+Ordered
 
-    <?php
-        echo "Hello world!";
-    ?>
-    
-Code Blocks (Preformatted text):
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
 
-    | First Header  | Second Header |
-    | ------------- | ------------- |
-    | Content Cell  | Content Cell  |
-    | Content Cell  | Content Cell  |
 
-####Javascript　
+1. You can use sequential numbers...
+1. ...or keep all the numbers as `1.`
 
-```javascript
-function test(){
-	console.log("Hello world!");
-}
- 
-(function(){
-    var box = function(){
-        return box.fn.init();
-    };
+Start numbering with offset:
 
-    box.prototype = box.fn = {
-        init : function(){
-            console.log('box.init()');
+57. foo
+1. bar
 
-			return this;
-        },
 
-		add : function(str){
-			alert("add", str);
+## Code
 
-			return this;
-		},
+Inline `code`
 
-		remove : function(str){
-			alert("remove", str);
+Indented code
 
-			return this;
-		}
-    };
-    
-    box.fn.init.prototype = box.fn;
-    
-    window.box =box;
-})();
+    // Some comments
+    line 1 of code
+    line 2 of code
+    line 3 of code
 
-var testBox = box();
-testBox.add("jQuery").remove("jQuery");
+
+Block code "fences"
+
+```
+Sample text here...
 ```
 
-####HTML code
+Syntax highlighting
 
-```html
-<!DOCTYPE html>
-<html>
-    <head>
-        <mate charest="utf-8" />
-        <title>Hello world!</title>
-    </head>
-    <body>
-        <h1>Hello world!</h1>
-    </body>
-</html>
+``` js
+var foo = function (bar) {
+  return bar++;
+};
+
+console.log(foo(5));
 ```
 
-###Images
+## Tables
 
-Image:
+| Option | Description |
+| ------ | ----------- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |
 
-![](https://pandao.github.io/editor.md/examples/images/4.jpg)
+Right aligned columns
 
-> Follow your heart.
+| Option | Description |
+| ------:| -----------:|
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |
 
-![](https://pandao.github.io/editor.md/examples/images/8.jpg)
 
-> 图为：厦门白城沙滩 Xiamen
+## Links
 
-图片加链接 (Image + Link)：
+[link text](http://dev.nodeca.com)
 
-[![](https://pandao.github.io/editor.md/examples/images/7.jpg)](https://pandao.github.io/editor.md/examples/images/7.jpg "李健首张专辑《似水流年》封面")
+[link with title](http://nodeca.github.io/pica/demo/ "title text!")
 
-> 图为：李健首张专辑《似水流年》封面
-                
-----
+Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 
-###Lists
 
-####Unordered list (-)
+## Images
 
-- Item A
-- Item B
-- Item C
-     
-####Unordered list (*)
+![Minion](https://octodex.github.com/images/minion.png)
+![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
 
-* Item A
-* Item B
-* Item C
+Like links, Images also have a footnote style syntax
 
-####Unordered list (plus sign and nested)
-                
-+ Item A
-+ Item B
-    + Item B 1
-    + Item B 2
-    + Item B 3
-+ Item C
-    * Item C 1
-    * Item C 2
-    * Item C 3
+![Alt text][id]
 
-####Ordered list
-                
-1. Item A
-2. Item B
-3. Item C
-                
-----
-                    
-###Tables
-                    
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell 
+With a reference later in the document defining the URL location:
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+[id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
 
-| Function name | Description                    |
-| ------------- | ------------------------------ |
-| `help()`      | Display the help window.       |
-| `destroy()`   | **Destroy your computer!**     |
 
-| Item      | Value |
-| --------- | -----:|
-| Computer  | $1600 |
-| Phone     |   $12 |
-| Pipe      |    $1 |
+## Plugins
 
-| Left-Aligned  | Center Aligned  | Right Aligned |
-| :------------ |:---------------:| -----:|
-| col 3 is      | some wordy text | $1600 |
-| col 2 is      | centered        |   $12 |
-| zebra stripes | are neat        |    $1 |
-                
-----
+The killer feature of `markdown-it` is very effective support of
+[syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
 
-####HTML entities
 
-&copy; &  &uml; &trade; &iexcl; &pound;
-&amp; &lt; &gt; &yen; &euro; &reg; &plusmn; &para; &sect; &brvbar; &macr; &laquo; &middot; 
+### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
 
-X&sup2; Y&sup3; &frac34; &frac14;  &times;  &divide;   &raquo;
+> Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:
+>
+> Shortcuts (emoticons): :-) :-( 8-) ;)
 
-18&ordm;C  &quot;  &apos;
+see [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.
 
-##Escaping for Special Characters
 
-\*literal asterisks\*
+### [Subscript](https://github.com/markdown-it/markdown-it-sub) / [Superscript](https://github.com/markdown-it/markdown-it-sup)
 
-##Markdown extras
+- 19^th^
+- H~2~O
 
-###GFM task list
 
-- [x] GFM task list 1
-- [x] GFM task list 2
-- [ ] GFM task list 3
-    - [ ] GFM task list 3-1
-    - [ ] GFM task list 3-2
-    - [ ] GFM task list 3-3
-- [ ] GFM task list 4
-    - [ ] GFM task list 4-1
-    - [ ] GFM task list 4-2
+### [\<ins>](https://github.com/markdown-it/markdown-it-ins)
 
-###Emoji mixed :smiley:
+++Inserted text++
 
-> Blockquotes :star:
 
-####GFM task lists & Emoji & fontAwesome icon emoji & editormd logo emoji :editormd-logo-5x:
+### [\<mark>](https://github.com/markdown-it/markdown-it-mark)
 
-- [x] :smiley: @mentions, :smiley: #refs, [links](), **formatting**, and <del>tags</del> supported :editormd-logo:;
-- [x] list syntax required (any unordered or ordered list supported) :editormd-logo-3x:;
-- [x] [ ] :smiley: this is a complete item :smiley:;
-- [ ] []this is an incomplete item [test link](#) :fa-star: @pandao; 
-- [ ] [ ]this is an incomplete item :fa-star: :fa-gear:;
-    - [ ] :smiley: this is an incomplete item [test link](#) :fa-star: :fa-gear:;
-    - [ ] :smiley: this is  :fa-star: :fa-gear: an incomplete item [test link](#);
-            
-###TeX(LaTeX)
-   
-$$E=mc^2$$
+==Marked text==
 
-Inline $$E=mc^2$$ Inline，Inline $$E=mc^2$$ Inline。
 
-$$\(\sqrt{3x-1}+(1+x)^2\)$$
-                    
-$$\sin(\alpha)^{\theta}=\sum_{i=0}^{n}(x^i + \cos(f))$$
-                
-###FlowChart
+### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
 
-```flow
-st=>start: Login
-op=>operation: Login operation
-cond=>condition: Successful Yes or No?
-e=>end: To admin
+Footnote 1 link[^first].
 
-st->op->cond
-cond(yes)->e
-cond(no)->op
-```
+Footnote 2 link[^second].
 
-###Sequence Diagram
-                    
-```seq
-Andrew->China: Says Hello 
-Note right of China: China thinks\nabout it 
-China-->Andrew: How are you? 
-Andrew->>China: I am good thanks!
-```
+Inline footnote^[Text of inline footnote] definition.
 
-###End
+Duplicated footnote reference[^second].
+
+[^first]: Footnote **can have markup**
+
+    and multiple paragraphs.
+
+[^second]: Footnote text.
+
+
+### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
+
+Term 1
+
+:   Definition 1
+with lazy continuation.
+
+Term 2 with *inline markup*
+
+:   Definition 2
+
+        { some code, part of Definition 2 }
+
+    Third paragraph of definition 2.
+
+_Compact style:_
+
+Term 1
+  ~ Definition 1
+
+Term 2
+  ~ Definition 2a
+  ~ Definition 2b
+
+
+### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
+
+This is HTML abbreviation example.
+
+It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
+
+*[HTML]: Hyper Text Markup Language
+
+### [Custom containers](https://github.com/markdown-it/markdown-it-container)
+
+::: warning
+*here be dragons*
+:::

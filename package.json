@@ -1,0 +1,26 @@
+{
+    "name": "basics",
+    "version": "0.0.1",
+    "description": "Package Básico",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/zherar7ordoya/Basics.git"
+    },
+    "keywords": [
+        "package",
+        "license",
+        "mit",
+        "gitignore",
+        "readme"
+    ],
+    "author": "Gerardo Tordoya",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/zherar7ordoya/Basics/issues"
+    },
+    "homepage": "https://zherar7ordoya.github.io/"
+}
